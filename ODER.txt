@@ -1,0 +1,17 @@
+variables
+Data Types
+Casting 
+Numbers
+strings
+Booleans
+Operators
+
+
+list 
+tuples
+sets
+Dictionaries
+If/else
+While/loop
+For/loop
+Funtions
