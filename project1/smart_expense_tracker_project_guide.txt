@@ -1,0 +1,85 @@
+SMART EXPENSE TRACKER (Console App)
+
+CONCEPT
+Build a command-line Python app that helps users track their daily expenses, categorize them, and get summary insights like total spent, top category, and average per day. This project focuses on mastering pure Python logic.
+
+
+CORE FEATURES
+
+1. Add a new expense (amount, category, note)
+2. View all expenses
+3. Filter expenses by category
+4. Calculate total, average, and max spending
+5. Remove an expense by ID
+6. Save and load data from a text/CSV file
+7. Optional: Sort by date or amount
+8. Generate a summary report
+9. Challenge mode: visualize with ASCII bars
+
+FILE STRUCTURE
+
+expense_tracker/
+│
+├── tracker.py           # main script
+├── data/
+│   └── expenses.csv     # where data is saved
+└── README.md            # documentation
+
+ DEVELOPMENT PLAN
+
+PHASE 1: SETUP THE SKELETON
+- Create the tracker.py file.
+- Define a welcome message and show a menu:
+  1. Add Expense
+  2. View Expenses
+  3. Filter by Category
+  4. Show Summary
+  5. Save & Exit
+- Use a while True loop to keep the app running until user exits.
+
+PHASE 2: ADD & STORE EXPENSES
+- When user adds an expense:
+    amount = float(input("Enter amount: "))
+    category = input("Enter category (food, transport, etc): ")
+    note = input("Enter note: ")
+
+- Store as dictionary:
+    {"id": 1, "amount": 250, "category": "food", "note": "Lunch"}
+
+- Append to list called expenses.
+
+PHASE 3: VIEWING & FILTERING
+- Use loops and formatted print to display expenses.
+- Use list comprehension to filter by category.
+
+PHASE 4: SUMMARY STATS
+Use functions like:
+    def total_expense(expenses): ...
+    def average_expense(expenses): ...
+    def highest_expense(expenses): ...
+
+PHASE 5: FILE HANDLING
+- Save expenses to expenses.csv on exit.
+- Load them back on startup.
+
+PHASE 6: CHALLENGE ENHANCEMENTS (OPTIONAL)
+- Add ASCII bar chart visualization.
+- Add user login system with dictionary nesting.
+
+SKILLS COVERED
+- Variables & Data Types
+-Casting & Operators
+- Lists, Tuples, Sets, Dictionaries
+- Conditionals & Loops
+- Functions
+- File I/O
+- Logic building
+
+- BONUS CHALLENGE
+
+Later, convert it into a Flask API:
+    /add       → Add new expense (POST)
+    /expenses  → List all expenses (GET)
+    /summary   → Get expense summary (GET)
+
+This transition will help you connect Python with React later.
