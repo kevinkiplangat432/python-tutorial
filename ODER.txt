@@ -18,16 +18,16 @@ Funtions
 
 lambda 
 arrays
+user input
+string formating
+try and except
+math
+scope 
+modules
 classes and objects
 inheritance
 iterators
-scope 
-modules
 dates
-math
 json
 regex
 pip
-try and except
-user input
-string formating
