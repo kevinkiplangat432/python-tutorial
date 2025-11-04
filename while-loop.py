@@ -1,8 +1,20 @@
-# Task:
-# Use a while loop to simulate a countdown from 10 to 0.
+# Initialize countdown start
+count = 10
 
-# Skip number 5
+# Start while loop
+while count >= 0:
+    # Skip number 5
+    if count == 5:
+        count -= 1
+        continue
 
-# Break if it reaches 2
+    # Break if it reaches 2
+    if count == 2:
+        print("Countdown stopped at 2!")
+        break
 
-# Print “Blast off!” at the end.
+    print(count)
+    count -= 1  # Decrease the counter each time
+
+# Print final message
+print("Blast off!")
