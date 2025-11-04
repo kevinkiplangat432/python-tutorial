@@ -1,11 +1,19 @@
-# Task:
-# Ask for a user’s age.
+# Ask for a user's age
+age_input = input("Enter your age: ")
 
-# If under 13 → print “Child”
+# Check if input is numeric
+if not age_input.isdigit():
+    print("Invalid input! Please enter a number.")
+else:
+    # Convert input to integer
+    age = int(age_input)
 
-# 13–19 → “Teen”
-
-# 20–64 → “Adult”
-
-# Else → “Senior”
-# Add one condition to check if input was invalid (not numeric).
+    # Check age categories
+    if age < 13:
+        print("Child")
+    elif 13 <= age <= 19:
+        print("Teen")
+    elif 20 <= age <= 64:
+        print("Adult")
+    else:
+        print("Senior")
