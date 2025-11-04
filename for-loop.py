@@ -1,4 +1,17 @@
-# Task:
-# Loop over a list of names, print each in uppercase.
-# Use a nested loop to print each letter of the name separately.
-# Add an else clause that runs after the loop completes.
+# List of names
+names = ["Kevin", "Alice", "Mark"]
+
+# Loop over the list
+for name in names:
+    # Print the name in uppercase
+    print(name.upper())
+
+    # Nested loop to print each letter separately
+    for letter in name:
+        print(letter)
+    
+    
+
+# Else clause runs after the loop finishes
+else:
+    print("All names have been printed successfully!")
