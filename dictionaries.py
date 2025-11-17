@@ -57,3 +57,4 @@ print(students)
 print("\nAverage grades:")
 for name, info in students.items():
     print(f"{info['name']}'s average grade: {info['average']}")
+
