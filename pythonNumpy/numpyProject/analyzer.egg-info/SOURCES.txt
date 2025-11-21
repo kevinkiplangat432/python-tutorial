@@ -1,0 +1,7 @@
+analyzer.py
+pyproject.toml
+analyzer.egg-info/PKG-INFO
+analyzer.egg-info/SOURCES.txt
+analyzer.egg-info/dependency_links.txt
+analyzer.egg-info/top_level.txt
+tests/test_analyzer.py
