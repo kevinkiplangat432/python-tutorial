@@ -1,8 +1,6 @@
 import numpy as np
 
-# ============================================================
 # 1. CHECKING DATA TYPES
-# ============================================================
 
 arr = np.array([1, 2, 3])
 print(arr.dtype)  
@@ -13,9 +11,7 @@ print(np.dtype('float'))      # float64
 print(np.dtype(np.int32))     # int32
 print(np.dtype('bool'))       # bool
 
-# ============================================================
 # 2. SPECIFYING DATA TYPES WHEN CREATING ARRAYS
-# ============================================================
 
 arr_float = np.array([1, 2, 3], dtype='float32')
 print(arr_float, arr_float.dtype)
@@ -29,9 +25,7 @@ arr_complex = np.array([1, 2, 3], dtype='complex128')
 print(arr_complex, arr_complex.dtype)
 # complex128
 
-# ============================================================
 # 3. NUMPY DATA TYPE CATEGORIES
-# ============================================================
 
 # Integers:
 # int8, int16, int32, int64
@@ -65,9 +59,7 @@ print(f, f.dtype)
 g = np.array([b'hi', b'hey'], dtype='S3')
 print(g, g.dtype)
 
-# ============================================================
 # 4. TYPE CASTING (astype)
-# ============================================================
 
 arr = np.array([1.7, 2.3, 3.9])
 arr_int = arr.astype('int32')
@@ -99,9 +91,7 @@ q = np.array([1 + 2j], dtype=np.complex64)
 r = p + q
 print(r, r.dtype)
 
-# ============================================================
 # 6. TYPE INFORMATION HELPERS
-# ============================================================
 
 print(np.iinfo(np.int32))  
 # Shows min and max value of int32
@@ -109,9 +99,7 @@ print(np.iinfo(np.int32))
 print(np.finfo(np.float32))
 # Shows float precision, min/max, eps, etc.
 
-# ============================================================
 # 7. CHECKING IF TYPES ARE INTEGER/FLOAT/COMPLEX
-# ============================================================
 
 arr1 = np.array([1, 2, 3.0])
 print(arr1.dtype.kind)
@@ -132,9 +120,7 @@ print(np.issubdtype(arr1.dtype, np.integer)) # False
 print(np.issubdtype(arr1.dtype, np.floating)) # True
 print(np.issubdtype(arr1.dtype, np.number))   # True
 
-# ============================================================
 # 8. OBJECT DATA TYPE (SLOW, AVOID UNLESS NECESSARY)
-# ============================================================
 
 # dtype=object lets you store ANY Python object
 arr_obj = np.array([1, "Kevin", 3.14, True], dtype=object)
