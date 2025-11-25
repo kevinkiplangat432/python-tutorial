@@ -1,0 +1,7 @@
+order_id,customer_id,customer_name,product,quantity,price,order_date
+1,101,Alice,Laptop,1,1200,2024-03-01
+2,102,Bob,Phone,2,600,2024-03-02
+3,103,Charlie,Headphones,1,150,2024-03-02
+4,101,Alice,Keyboard,1,80,2024-03-03
+5,104,Diana,Mouse,3,25,2024-03-04
+6,102,Bob,Charger,2,20,2024-03-04
